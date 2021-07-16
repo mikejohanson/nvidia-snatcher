@@ -1,16 +1,11 @@
 import {Store} from './store';
 
-export const Alternate: Store = {
+export const AlternateDe: Store = {
   currency: '€',
   labels: {
     inStock: {
-      container: 'span.d-flex > b:nth-child(1)',
-      text: [
-        'auf lager',
-        'ware neu eingetroffen',
-        'in kürze versandfertig',
-        'ware im zulauf',
-      ],
+      container: '.details-cart-button',
+      text: ['In den Warenkorb'],
     },
     maxPrice: {
       container: '.price > span:nth-child(1)',
@@ -1001,9 +996,15 @@ export const Alternate: Store = {
     {
       brand: 'sony',
       model: 'ps5 console',
+      series: 'sonyps5c',
+      url: 'https://www.alternate.de/html/product/1750947',
+    },
+    {
+      brand: 'sony',
+      model: 'ps5 console',
       series: 'sonyps5de',
       url: 'https://www.alternate.de/html/product/1651221',
     },
   ],
-  name: 'alternate',
+  name: 'alternate-de',
 };
